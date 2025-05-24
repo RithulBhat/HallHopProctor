@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "HallHop - Testing",
+  "description": "Student check-in system with timer and schedule sync.",
+  "version": "2.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://hacapi-hh.onrender.com/*"
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
